@@ -76,7 +76,7 @@ nav a:hover {
 }
 .mines {
     position: absolute;
-    left: 900px;
+    left: 885px;
     top: 250px;
     filter: drop-shadow(0 0 20px white);
 }
