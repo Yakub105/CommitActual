@@ -1,0 +1,157 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    padding: 0;
+    background: radial-gradient(circle at 20% 30%, rgb(30, 36, 54), rgb(7, 9, 14));
+    color: rgb(240, 243, 248);
+    min-height: 100vh;
+}
+.logo { 
+    color: red;
+    font-size: 50px;
+    font-family: Helvetica, sans-serif,;
+    text-align: left;
+    padding: 20px;
+}
+.logo h4 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 33px;
+    font-weight: 900;
+    color: red;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin: 0;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+    animation: glow 1.5s infinite alternate;
+}
+nav .box {
+    font-size: 17px;
+    margin: 7px;
+    border-radius: 20px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    padding: 7px;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    background: rgba(0,0,0,1);
+    padding: 10px;
+    text-align: right;
+}
+nav a:hover {
+    color: red;
+}
+.achive {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.dost-title {
+    text-align: center;
+    font-size: 48px;
+    color: red;
+    margin-bottom: 50px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}
+.achive-section {
+    margin-bottom: 60px;
+    width: 100%;
+}
+.team-achive {
+    text-align: center;
+    font-size: 32px;
+    color: yellowgreen;
+    margin-bottom: 30px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid rgba(255, 217, 102, 0.3);
+    display: inline-block;
+    width: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+.achive-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    width: 100%;
+}
+.achive-card {
+    background: rgba(19, 46, 52, 0.7);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    padding: 30px;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+    border: 1px solid rgba(255, 217, 102, 0.3);
+    flex: 1 1 250px;
+    min-width: 220px;
+    max-width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.achive-card:hover {
+    transform: translateY(-15px);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+    border-color: yellowgreen;
+}
+.achive-photo {
+    font-size:48px;
+    margin-bottom: 15px;
+}
+.achive-card h3 {
+    color: yellowgreen;
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+.achive-card p {
+    color: write;
+    font-size: 14px;
+}
+.achive-year {
+    margin-top: 5px;
+    font-size: 12px;
+    color: gray;
+}
+@media (max-width: 768px) {
+    .dost-title {
+        font-size: 32px;
+    }
+    .team-achive {
+        font-size: 24px;
+    }
+    .team-card {
+        flex: 1 1 200px;
+        padding: 20px;
+    }
+    .achive-photo {
+        font-size: 36px;
+    }
+    .achive-card h3 {
+        font-size: 16px;
+    }
+}
+@media (max-width: 480px) {
+    .dost-title {
+        font-size: 24px;
+    }
+    .team-achive {
+        font-size: 20px;
+    }
+    .achive-card {
+        flex: 1 1 100%;
+        max-width: 100%;
+    }
+}

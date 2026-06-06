@@ -8,6 +8,8 @@ body {
     padding: 0;
     background: radial-gradient(circle at 20% 30%, rgb(30, 36, 54), rgb(7, 9, 14));
     color: rgb(240, 243, 248);
+    display: flex;
+    flex-direction: column;
     min-height: 100vh;
 }
 .logo { 
@@ -21,7 +23,7 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 33px;
     font-weight: 900;
-    color: yellowgreen;
+    color: red;
     text-transform: uppercase;
     letter-spacing: 2px;
     margin: 0;
@@ -38,23 +40,35 @@ nav .box {
     padding: 7px;
 }
 nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
     background: rgba(0,0,0,1);
-    padding: 10px;
+    padding: 10px 20px;
     text-align: right;
 }
 nav a:hover {
-    color: aqua;
+    color: red;
+}
+.menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    gap: 5px;
 }
 .hero {
     font-size: 50px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 250px 8%;
+    flex-wrap: wrap;
+    padding: 100px 8%;
     color: white;
 }
 .content {
-    max-width: 600px;
+    max-width: 800px;
+    flex: 1;
 }
 .hero h4 {
     font-family: Arial, Helvetica, sans-serif;
@@ -70,30 +84,39 @@ nav a:hover {
 .hero p {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 45px;
-    color: yellowgreen;
+    color: red;
     text-transform: capitalize;
     letter-spacing: 1px;
 }
 .mines {
-    position: absolute;
-    left: 885px;
-    top: 190px;
+    display: block;
+    max-width: 100%;
+    height: auto;
     filter: drop-shadow(0 0 20px white);
+    transform: translate(30px, 10px);
+}
+.history {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.history-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
 }
 .one-year {
-    position: absolute;
-    left: 575px;
-    top: 950px;
     font-size: 45px;
     color: red;
     text-shadow: 2px 2px 0 #0a2f3a, 4px 4px 0 rgba(0,0,0,0.3);
     font-weight: bold;
 }
 .one-photo {
-    position: absolute;
-    left: 430px;
-    top: 1025px;
     filter: drop-shadow(0 0 10px white);
+    display: block;
+    max-width: 100%;
+    height: auto;
 }
 .one-history {
     background: rgba(19,46,52,0.7);
@@ -103,9 +126,6 @@ nav a:hover {
     border-radius: 20px;
     text-align: center;
     height: auto;
-    position: absolute;
-    left: 295px;
-    top: 1490px;
     font-size: 20px;
     border: 1px solid rgba(255,217,102,0.3);
     margin: 5px;
@@ -115,25 +135,22 @@ nav a:hover {
     white-space: normal;
 }
 .one-kevin {
-    position: absolute;
-    left: 100px;
-    top: 1880px;
     filter: drop-shadow(0 0 10px white);
+    display: block;
+    max-width: 100%;
+    height: auto;
 }
 .two-year {
-    position: absolute;
-    left: 1000px;
-    top: 2130px;
     font-size: 40px;
     color: red;
     text-shadow: 2px 2px 0 #0a2f3a, 4px 4px 0 rgba(0,0,0,0.3);
     font-weight: bold;
 }
 .kevin-pro {
-    position: absolute;
-    left: 575px;
-    top: 1770px;
     filter: drop-shadow(0 0 10px white);
+    display: block;
+    max-width: 100%;
+    height: auto;
 }
 .two-history {
     background: rgba(19,46,52,0.7);
@@ -143,9 +160,6 @@ nav a:hover {
     border-radius: 20px;
     text-align: center;
     height: auto;
-    position: absolute;
-    left: 630px;
-    top: 2375px;
     font-size: 22px;
     border: 1px solid rgba(255,217,102,0.3);
     margin: 5px;
@@ -155,27 +169,24 @@ nav a:hover {
     white-space: normal;
 }
 .photo-karl {
-    position: absolute;
-    left: 10px;
-    top: 2750px;
     filter: drop-shadow(0 0 10px white);
+    display: block;
+    max-width: 100%;
+    height: auto;
 }
 .photo-love {
-    position: absolute;
-    left: 1030px;
-    top: 2750px;
     filter: drop-shadow(0 0 10px white);
+    display: block;
+    max-width: 100%;
+    height: auto;
 }
 .kevin-three {
-    position: absolute;
-    left: 525px;
-    top: 2750px;
     filter: drop-shadow(0 0 10px white);
+    display: block;
+    max-width: 100%;
+    height: auto;
 }
 .three-year {
-    position: absolute;
-    left: 500px;
-    top: 2670px;
     font-size: 40px;
     color: red;
     text-shadow: 2px 2px 0 #0a2f3a, 4px 4px 0 rgba(0,0,0,0.3);
@@ -189,9 +200,6 @@ nav a:hover {
     border-radius: 20px;
     text-align: center;
     height: auto;
-    position: absolute;
-    left: 50px;
-    top: 3400px;
     font-size: 22px;
     border: 1px solid rgba(255,217,102,0.3);
     margin: 5px;
@@ -201,21 +209,18 @@ nav a:hover {
     white-space: normal;
 }
 .one-edw {
-    position: absolute;
-    left: 100px;
-    top: 4100px;
     filter: drop-shadow(0 0 10px white);
+    display: block;
+    max-width: 100%;
+    height: auto;
 }
 .two-edw {
-    position: absolute;
-    left: 380px;
-    top: 3800px;
     filter: drop-shadow(0 0 10px white);
+    display: block;
+    max-width: 100%;
+    height: auto;
 }
 .four-year {
-    position: absolute;
-    left: 775px;
-    top: 3900px;
     font-size: 40px;
     color: red;
     text-shadow: 2px 2px 0 #0a2f3a, 4px 4px 0 rgba(0,0,0,0.3);
@@ -225,13 +230,10 @@ nav a:hover {
     background: rgba(19,46,52,0.7);
     backdrop-filter: blur(10px);
     box-shadow: 0 15px 35px rgba(0,0,0,0.3);
-    width: 700px;
+    width: 1400px;
     border-radius: 20px;
     text-align: center;
     height: auto;
-    position: absolute;
-    left: 775px;
-    top: 4100px;
     font-size: 22px;
     border: 1px solid rgba(255,217,102,0.3);
     margin: 5px;

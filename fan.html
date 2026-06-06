@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <link href="fan.css" type="text/css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="mt.webp">
+    <script src="fan.js" defer></script>
+    <title>Фан-зона</title>
+</head>
+<body>
+    <div class="fonsite"></div>
+    <header>
+        <nav>
+            <div class="logo">
+                <h4>TIMBERWOLVES</h4>
+            </div>
+            <div class="menu">
+                <a class="box", href="index.html">Главная</a>
+                <a class="box", href="sostav.html">Состав</a>
+                <a class="box", href="fan.html">Фан-зона</a>
+                <a class="box", href="dost.html">Достижения</a>
+                <a class="box", href="galer.html">Галерея игроков</a>
+            </div>
+        </nav>
+    </header>
+    <div class="content-fan">
+        <h1 class="fan-title">Фан-зона</h1>
+        <div class="random-fact">
+            <h3>Случайный факт о команде</h3>
+            <div id="fact-text" class="fact-text">Нажми, чтобы узнать интересный факт факт о команде</div>
+            <button id="fact-btn" class="fact-btn">Кнопка буууээээ</button>
+        </div>
+        <div class="viktory">
+            <h3>Викторина - Знаешь ли ты Timberwolfs</h3>
+            <form id="viktoty">
+                <div class="viktory-vop">
+                    <p>В каком году был основан клуб?</p>
+                    <label><input type="radio" name="v1" value="1987">1987</label>
+                    <label><input type="radio" name="v1" value="1989">1989</label>
+                    <label><input type="radio" name="v1" value="1991">1991</label>
+                    <label><input type="radio" name="v1" value="1995">1995</label>
+                </div>
+                <div class="viktory-vop">
+                    <p>Кто был выбран под первым номером пика драфта НБА 1995?</p>
+                    <label><input type="radio" name="v2" value="kevin">Кевин Гарнет</label>
+                    <label><input type="radio" name="v2" value="mike">Майкл Джордан</label>
+                    <label><input type="radio" name="v2" value="onil">Шакил О`Нил</label>
+                    <label><input type="radio" name="v2" value="pippen">Скотти Пиппен</label>
+                </div>
+                <div class="viktory-vop">
+                    <p>В каком году команда впервые вышла в финал Западной конференции</p>
+                    <label><input type="radio" name="v3" value="2000">2000</label>
+                    <label><input type="radio" name="v3" value="2004">2004</label>
+                    <label><input type="radio" name="v3" value="2018">2018</label>
+                    <label><input type="radio" name="v3" value="2024">2024</label>
+                </div>
+                <div class="viktory-vop">
+                    <p>Какой номер был у Кевина Гарнета в Миннесоте</p>
+                    <label><input type="radio" name="v4" value="5">5</label>
+                    <label><input type="radio" name="v4" value="21">21</label>
+                    <label><input type="radio" name="v4" value="32">32</label>
+                    <label><input type="radio" name="v4" value="34">34</label>
+                </div>
+                <button type="submit" class="viktory-sub">Проверить ответы</button>
+            </form>
+            <div id="viktory-res" class="viktory-res"></div>
+        </div>
+    </div>
+</body>
+</html>

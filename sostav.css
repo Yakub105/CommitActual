@@ -1,0 +1,140 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    padding: 0;
+    background: radial-gradient(circle at 20% 30%, rgb(30, 36, 54), rgb(7, 9, 14));
+    color: rgb(240, 243, 248);
+    min-height: 100vh;
+}
+.logo { 
+    color: red;
+    font-size: 50px;
+    font-family: Helvetica, sans-serif,;
+    text-align: left;
+    padding: 20px;
+}
+.logo h4 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 33px;
+    font-weight: 900;
+    color: red;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin: 0;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+    animation: glow 1.5s infinite alternate;
+}
+nav .box {
+    font-size: 17px;
+    margin: 7px;
+    border-radius: 20px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    padding: 7px;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    background: rgba(0,0,0,1);
+    padding: 10px;
+    text-align: right;
+}
+nav a:hover {
+    color: red;
+}
+.team {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    width: 100%;
+}
+.player-card {
+    background: rgba(19, 46, 52, 0.7);
+    position: relative;
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s;
+    border: 1px solid rgba(255, 217, 102, 0.7);
+    flex: 1 1 250px;
+    min-width: 220px;
+    max-width: 280px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.player-card:hover {
+    transform: translateY(-20px);
+}
+.player-photo {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 15px;
+    border: 3px solid red;
+}
+.player-card h3 {
+    color: red;
+    font-size: 22px;
+    margin-bottom: 5px;
+}
+.stats {
+    display: block;
+    margin-top: 10px;
+    font-size: 20px;
+    color: yellowgreen;
+}
+.player-card p {
+    color: yellowgreen;
+    font-size: 20px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+.team {
+    margin-top: 100px;
+}
+.sostav-title {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 33px;
+    font-weight: 900;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-top: 75px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+    animation: glow 1.5s infinite alternate;
+    text-align: center;
+}
+.number{
+    position: absolute;
+    top: 3px;
+    left: 10px;
+    color: lightgreen;
+    font-weight: bolder;
+    font-size: 20px;
+}
+.trener-card {
+    background: rgba(19, 46, 52, 0.7);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s;
+    border: 1px solid rgba(255, 217, 102, 0.7);
+    flex: 1 1 250px;
+    min-width: 220px;
+    max-width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
